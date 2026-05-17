@@ -7,7 +7,10 @@
       "Bash(git commit *)",
       "Bash(git push *)",
       "Bash(git pull *)",
-      "Bash(python *)"
+      "Bash(python *)",
+      "Bash(streamlit run *)",
+      "Bash(curl -s http://localhost:8501)",
+      "Bash(curl *)"
     ]
   }
 }

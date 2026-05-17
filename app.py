@@ -59,6 +59,11 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
+# Show loading message immediately
+if 'initialized' not in st.session_state:
+    with st.spinner("🚀 Loading Aviation Intelligence Platform..."):
+        st.session_state.initialized = True
+
 st.markdown(
     """
 <script>document.title = "Aviation Intelligence \u00b7 India Live Flight Tracker";</script>
