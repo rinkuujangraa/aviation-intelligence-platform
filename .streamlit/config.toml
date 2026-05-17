@@ -1,0 +1,20 @@
+[server]
+enableStaticServing = true
+headless = true            # required for cloud deployment (no browser popup)
+maxUploadSize = 10         # MB — keeps the upload widget sane
+
+[client]
+showErrorDetails = false   # don't leak stack traces to users
+toolbarMode = "minimal"    # hide the deploy / share toolbar buttons
+
+[browser]
+gatherUsageStats = false   # don't ping Streamlit telemetry
+
+[theme]
+base = "dark"
+backgroundColor = "#030810"
+secondaryBackgroundColor = "#0a1420"
+primaryColor = "#ffcf34"
+textColor = "#eef3fa"
+font = "sans serif"
+
