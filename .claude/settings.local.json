@@ -10,7 +10,9 @@
       "Bash(python *)",
       "Bash(streamlit run *)",
       "Bash(curl -s http://localhost:8501)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(git ls-remote *)",
+      "Bash(grep -E \"\\\\.\\(db|json\\)$\")"
     ]
   }
 }
