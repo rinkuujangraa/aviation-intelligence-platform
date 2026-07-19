@@ -250,7 +250,10 @@ def build_features(
     df["is_peak_x_route_count"] = df["is_peak_hour"] * np.log1p(df["route_flight_count"])
 
     # Monsoon × arrival airport interaction (helps model learn which airports affected most)
-    df["monsoon_x_arr_airport"] = df["is_monsoon"] * df.get("arr_airport_enc", 0).fillna(0)
+    if "arr_airport_enc" in df.columns:
+        df["monsoon_x_arr_airport"] = df["is_monsoon"] * df["arr_airport_enc"].fillna(0)
+    else:
+        df["monsoon_x_arr_airport"] = 0
 
     # ── Label encoding ───────────────────────────────────────────────────────
     if fit:
