@@ -1,22 +1,41 @@
+# ── Secrets ──
 .env
+.env.local
+
+# ── Python ──
 .venv/
 __pycache__/
+*.py[cod]
 .mypy_cache/
-.DS_Store
-flight_trails.json
-flights.html
+.ipynb_checkpoints/
 
-# Database & trained model artifacts (large / potentially sensitive)
+# ── OS ──
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# ── Dev tooling ──
+.claude/
+.codex/
+.cursor/
+.vscode/
+
+# ── Database & model artifacts ──
 *.db
 *.db-journal
 *.db-wal
 *.db-shm
 aviation_intelligence.db
+flight_trails.json
 models/*.pkl
 models/*.joblib
 
-# Dev-only artifacts
+# ── Cached / generated data ──
+flights.html
+static/map.html
+
+# ── Dev-only scripts ──
 _archive/
 _diag2.py
 design_mockup*.html
-static/map.html
