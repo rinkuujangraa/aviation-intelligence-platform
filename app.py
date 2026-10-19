@@ -1710,7 +1710,7 @@ _missing_keys = []
 if not os.getenv("AIRLABS_API_KEY"):
     _missing_keys.append("AIRLABS_API_KEY")
 if _missing_keys:
-    _html(
+    components.html(
         f"""
         <div style="font-family:'SF Pro Display','Segoe UI',Arial,sans-serif;
                     background:linear-gradient(135deg,#0d1520,#131c2a);
